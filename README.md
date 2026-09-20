@@ -26,7 +26,7 @@ npm install github:altyaper/lollipop-camera-sdk
 
 ## Requirements
 
-- Node.js 20 or newer
+- Node.js 22.13 or newer
 - Your own Lollipop Parse application ID and REST API key
 - A Lollipop account
 
@@ -97,6 +97,10 @@ Dynamic class/function names are validated before a request is sent.
 ## API reference
 
 See [docs/API.md](docs/API.md) for constructors, methods, types, authentication flow, and error behavior.
+
+## Runnable example
+
+See the [runnable examples directory](https://github.com/altyaper/lollipop-camera-sdk/tree/main/examples) for a local interactive example that authenticates, handles OTP, and requests camera/profile/version resources while printing only redacted summaries.
 
 ## Captured response coverage
 

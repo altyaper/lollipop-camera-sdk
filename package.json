@@ -1,0 +1,50 @@
+{
+  "name": "@altyaper/lollipop-camera-sdk",
+  "version": "0.1.0",
+  "description": "Unofficial, typed TypeScript SDK for the Lollipop Camera cloud API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit && eslint .",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "prepack": "npm run check && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "lollipop-camera",
+    "typescript",
+    "sdk",
+    "parse-server"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altyaper/lollipop-camera-sdk.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^22.18.3",
+    "@vitest/coverage-v8": "^5.0.1",
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0",
+    "vitest": "^5.0.1"
+  }
+}

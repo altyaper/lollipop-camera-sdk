@@ -18,5 +18,5 @@
     "rootDir": ".",
     "lib": ["ES2022", "DOM"]
   },
-  "include": ["src/**/*.ts", "test/**/*.ts", "eslint.config.js", "vitest.config.ts"]
+  "include": ["src/**/*.ts", "test/**/*.ts", "examples/**/*.ts", "eslint.config.js", "vitest.config.ts"]
 }

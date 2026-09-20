@@ -20,12 +20,13 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit && eslint .",
+    "example:list-resources": "npm run build --silent && tsx examples/list-resources.ts",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "prepack": "npm run check && npm test && npm run build"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13.0"
   },
   "keywords": [
     "lollipop-camera",
@@ -40,9 +41,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@inquirer/prompts": "^8.7.2",
     "@types/node": "^22.18.3",
     "@vitest/coverage-v8": "^5.0.1",
     "eslint": "^9.35.0",
+    "tsx": "^4.23.13",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.43.0",
     "vitest": "^5.0.1"
